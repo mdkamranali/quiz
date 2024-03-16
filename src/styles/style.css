@@ -1,0 +1,327 @@
+/* @import './styles/components/home'; */
+
+#home {
+    background-image: url('https://github.com/barman47/quiz-app/blob/master/src/assets/img/background.jpg?raw=true');
+    background-size:cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    section {
+         background-color: rgba(0,0,0,0.7);
+         height:80%;
+         width:35%;
+    }
+    a.play-button{
+        background-color: green;
+        cursor:pointer;
+        color:white;display: block;
+        padding:16px;
+        border-radius: 30px;
+        text-align: center;
+        text-decoration: none;
+        width:80%;
+        transition:0.3s linear all;
+    
+    }
+    a.play-button:hover{
+        background-color:darkgrey;
+    }
+    h1{
+        color:white;
+        text-align: center;
+        font-size:56px;
+    }
+    .auth-container{
+        width:100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    #login-button{
+        background-color: red;
+    }
+    #signup-button{
+        background: green;
+    }
+    .auth-container .auth-buttons{
+        color:white;
+        cursor: pointer;
+        border-radius: 30px;
+        padding:4px;
+        width:50%;
+    }
+}
+
+.instructions{
+    border: 1px solid #f8f8f8;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom:10px;
+
+    h1{
+        font-size: 50px;
+        color:black;
+        text-align: center;
+    }
+    /* img {
+        width: 50%;
+        height: 80%;
+    } */
+}
+
+.questions{
+    background-color: white;
+    border-left:5px solid lightblue;
+    width: 80%;
+    padding:40px;
+
+    .question-numbers-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px; /* Adjust padding as needed */
+    }
+    .question-number-box {
+        width: 40px; /* Adjust width as needed */
+        height: 40px; /* Adjust height as needed */
+        border-radius: 10px; /* Rounded corners */
+        background-color: #e0e0e0; /* Background color */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px; /* Adjust font size as needed */
+        cursor: pointer; /* Cursor pointer on hover */
+    }
+    .not-reviewed {
+        background-color: green;
+        /* Add any other styles you want to apply */
+    }
+    .question-number-box {
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        cursor: pointer;
+    }
+    
+    .answered {
+        background-color: lightgreen;
+    }
+    .question-number-box.marked-review {
+        background-color: yellow;
+    }
+    .highlight{
+        border:5px solid black;
+    }
+    .review-checkbox {
+        margin-left: 10px;
+    }
+    .yyy{
+          position: relative;
+          top:-4px;
+          font-size: 21px;
+    }
+    .hint{
+        position: relative;
+        left:904px
+    }
+    h2{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .lifeline{
+        position:relative;
+        top:22px;
+        left:-30px;
+    }
+    .timer{
+        margin-left: 900px;
+    }
+    h3{
+        text-align: center;
+    }
+    .options-container{
+        display: inline-block;
+        width: 50%;
+    }
+    .option{
+        background-color: #1da1f2;
+        border-radius: 30px;
+        color: white;
+        cursor: pointer;
+        padding:11px;
+        text-align: center;
+        margin:19px;
+        transition: 0.3s linear all;
+    }
+    .option:hover{
+       background-color:darkblue;
+    }
+    .button-container{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .previous{
+          background-color: lightblue;
+          padding:4px;
+    }
+    .next{
+         background-color: lightgreen;
+         padding:4px;
+    }
+    .next2{
+        background-color: lightyellow;
+        padding:4px;
+   }
+    .quit{
+        background-color: lightcoral;
+        padding:4px;
+        border-radius: 10px solid blue;
+    }
+    a.bottom{
+        text-decoration:none;
+    }
+    .time{
+        position: relative;
+        left:850px;
+    }
+    .box1{
+        height:30px;
+        width:96px;
+        background-color: #e0e0e0;
+        border-radius:12px;
+        position:relative;
+        top:-338px;
+        left:-244px;
+        padding:4px;
+    }
+    .new{
+        font-size: larger;
+    }
+    .box2{
+        height:30px;
+        width:129px;
+        background-color: yellow;
+        border-radius:12px;
+        position:relative;
+        top:-338px;
+        left:-248px;
+        padding:4px;
+    }
+    .box3{
+        height:30px;
+        width:96x;
+        background-color: palegreen;
+        border-radius:12px;
+        position:relative;
+        top:-338px;
+        left:-246px;
+        padding:4px;
+    }
+}
+.quiz-summary {
+
+    span.success-icon {
+        color: lightgreen;
+        font-size: 50px;
+    }
+
+    h1 {
+        color: lightgreen;
+        text-align: center;
+        font-size: 40px;
+        margin-top: -10px;
+    }
+
+    h2 {
+        color: blue;
+    }
+
+    h4 {
+        color: black;
+    }
+
+    .stats {
+        background-color: white;
+        max-width: 50%;
+        padding: 10px 30px 30px 30px;
+    }
+
+    .stats h4, .stats h2 {
+        text-align: center;
+    }
+
+    .stats .stat {
+        color: black;
+        font-size: 20px;
+    }
+
+    section ul {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    section ul li {
+        display: inline-block;
+    }
+
+    section ul li a {
+        padding: 10px!important;
+    }
+
+    section ul li a:hover {
+        color: white;
+    }
+
+    section ul li:first-child {
+        border: 1px solid blue;
+        margin-right: 10px;
+        transition: 0.3s linear all;
+    }
+    .question-number-box.answered {
+        background-color: palegreen;
+    }
+    .question-number-box.not-answered {
+        background-color: red;
+    }
+    
+    section ul li:first-child:hover {
+        background-color: blue;
+    }
+
+    section ul li:last-child {
+        border: 1px solid green;
+        transition: 0.3s linear all;
+    }
+
+    section ul li:last-child:hover {
+        background-color: green;
+    }
+
+    section ul li:last-child a {
+        color: green;
+    }
+
+    section ul li:last-child a:hover {
+        color: white;
+    }
+
+    .no-stats {
+        color: black;
+        margin: 30px auto;
+    }
+
+    .highlighted {
+        background-color: #ffff66; /* Yellow background */
+        border: 2px solid #ffcc00; /* Orange border */
+    }
+    
+}
+
+
+
+
